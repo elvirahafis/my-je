@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 const Navbar = ({ setShowLogin }) => {
   const { getTotalQuantity } = useContext(StoreContext);
-  const totalQuantity = getTotalQuantity();
 
   const [menu, setMenu] = useState("home");
 
@@ -18,35 +17,30 @@ const Navbar = ({ setShowLogin }) => {
       <ul className="navbar-menu">
         <Link
           to="/"
-          onClick={() => setMenu("home")}
           className={menu === "home" ? "active" : ""}
         >
           Home
         </Link>
         <a
           href="#explore-menu"
-          onClick={() => setMenu("About")}
           className={menu === "menu" ? "active" : ""}
         >
           About
         </a>
         <a
           href="#app-download"
-          onClick={() => setMenu("Promotions")}
           className={menu === "mobile-app" ? "active" : ""}
         >
           Promotions
         </a>
         <a
           href="#footer"
-          onClick={() => setMenu("Blogs")}
           className={menu === "contact-us" ? "active" : ""}
         >
           Blogs
         </a>
         <a
           href="#footer"
-          onClick={() => setMenu("contact-us")}
           className={menu === "contact-us" ? "active" : ""}
         >
           Contact Us
@@ -55,12 +49,12 @@ const Navbar = ({ setShowLogin }) => {
       <div className="navbar-right">
         <a
             href="#footer"
-            onClick={() => setMenu("contact-us")}
+  
             className={menu === "contact-us" ? "active" : ""}
           >
             Masuk
           </a>
-        <button className="button-right" onClick={() => setShowLogin(true)}>Daftar Sekarang</button>
+        <button className="button-right">Daftar Sekarang</button>
       </div>
     </div>
   );

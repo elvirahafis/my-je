@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.css";
-
 const Header = () => {
   return (
     <header>
@@ -15,6 +14,7 @@ const Header = () => {
           <button >Daftar Sekarang</button>
           <button  style={{backgroundColor: "#FFFFFF"}}>About Us</button>
         </a>
+
       </div>
     </header>
   );

@@ -24,7 +24,7 @@ const ExploreMenu = ({ category, setCategory }) => {
                 className={category === item.menu_name ? "active" : ""}
                 alt="menu_image"
               />
-              <p>{item.menu_name}</p>
+              <p>{item.menu_name}</p>  <p>{item.qty}</p>
             </div>
           );
         })}

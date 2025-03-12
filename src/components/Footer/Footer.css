@@ -1,6 +1,6 @@
 footer {
-  color: #fff;
-  background-color: var(--dark);
+  color: #b9afaf;
+  background-color:  #438b5b;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,6 +23,7 @@ footer {
 
 .footer-content-left,
 .footer-content-right,
+.footer-content-top,
 .footer-content-center {
   display: flex;
   flex-direction: column;
@@ -37,7 +38,7 @@ footer li {
 }
 
 footer h2 {
-  color: var(--primary);
+  color: var(--black);
 }
 
 .footer-social-icons img {
@@ -55,7 +56,7 @@ footer hr {
 
 .footer-copyright {
   text-align: center;
-  color: var(--primary);
+  color: var(--black);
 }
 
 @media (max-width: 750px) {
